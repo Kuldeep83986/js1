@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Methods: Function vs. Arrow Function and this</h1>
+</body>
+
+</html>
+
+<script>
+    //  1. Error-Based Debugging:
+    // Fix the issue in the following code where the arrow function fails to access the object’s properties:
+    const obj = {
+        name: "JavaScript",
+        getName: () => this.name,
+    };
+    console.log(obj.getName()); // Expected Output: "JavaScript"
+
+
+</script>

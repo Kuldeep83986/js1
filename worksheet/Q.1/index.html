@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Q.1 Dynamic vs. Static Typing</h1>
+</body>
+
+</html>
+
+<script>
+
+    // 1.Error-Based Debugging:
+    // Identify and fix the issue in this code that relies on dynamic typing:
+    function calculateArea(length, width) {
+        return length * width;
+    }
+    console.log(calculateArea(10, Number("5"))); // Expected: Error-free calculation
+
+
+    // 3. Output - Based Question:
+    // Write a program that accepts inputs of various types(e.g., number, string) and converts them into numbers before calculating their sum.
+    // Input: ["10", 20, "30"]
+    // Expected Output: 60
+    function Test(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sum += Number(arr[i]);
+        }
+        return sum;
+    }
+
+    let arr = ["10", 20, "30"];
+    let result = Test(arr);
+    console.log(result);
+
+
+    // 4. Related Topic Question:
+    // Compare and contrast the behavior of dynamic typing in JavaScript with the type coercion mechanism. Provide an example demonstrating both.
+    //ANS:- The behavior of dynamic type in javascript is the happening at the run time because it's convert the variable explicitly.
+
+
+</script>

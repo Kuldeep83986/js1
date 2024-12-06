@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Functions: Declarative, Expression, Anonymous, Arrow</h1>
+</body>
+
+</html>
+
+<script>
+
+    // 1. Error-Based Debugging:
+    // Fix the issue with the following arrow function:
+    const multiply = (a, b) => (a * b);
+    console.log(multiply(2, 3)); // Expected Output: 6
+
+    // 2. Explanation Task:
+    // Record a 5-minute video explaining the difference between declarative and arrow functions, focusing on their this behavior.
+
+    // 3. Output-Based Question:
+    // Create a higher-order function that takes a callback (anonymous or arrow function) and applies it to double each value in an array.
+    //Input: [1, 2, 3]
+    // Expected Output: [2, 4, 6]
+    let arr = [1, 2, 3];
+    let res = arr.map((el) => {
+        return el * 2;
+    })
+    console.log(res);
+
+    //4. Related Topic Question:
+    // How do arrow functions differ from function expressions in terms of scope and this behavior? Provide an example.
+    //ANS :-  
+
+</script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Q.2 String Concatenation and Type Coercion</h1>
+</body>
+
+</html>
+
+<script>
+
+    // 1. Error-Based Debugging:
+    // Debug the following code to ensure proper numeric calculation:
+    let a = "10";
+    let b = "5";
+    console.log(Number(a) + Number(b)); // Expected Output: 15
+
+
+    // 2. Explanation Task:
+    // Create a video explaining how JavaScript handles type coercion with the + and - operators. Include examples like 10 + "20" and "30" - 5.
+
+
+    // 3. Output-Based Question:
+    // Write a function that performs strict string concatenation without unintended coercion.
+    // Input: ["Hello", 42, true]
+    // Expected Output: "Hello42true"
+    function Test(arr) {
+        let sum = "";
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        return sum;
+    }
+
+    let arr = ["Hello", 42, true];
+    let result = Test(arr);
+    console.log(result);
+
+
+    // 4. Related Topic Question:
+    // Discuss how type coercion differs in equality checks (== vs. ===). Provide an example.
+    //ANS:-   == is checks the only equality of the value but === checks the equality of the value and data type of the value. 
+
+</script>
